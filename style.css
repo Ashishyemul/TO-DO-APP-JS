@@ -26,6 +26,12 @@ header{
     color: white;
 }
 
+.header2{
+    width: 40vw;
+    margin-left: 20px;
+
+}
+
 .tasklist span{
     color: rgb(0, 200, 255);
     color: white;
@@ -98,7 +104,7 @@ section{
 .newTask2 {
     position: absolute;
     left: 50%;
-    top: 10%;
+    top: 17%;
     transform: translateX(-50%);
     visibility: visible;
   }
@@ -121,7 +127,7 @@ section{
     background-color: white;
     color: black;
     text-overflow: ellipsis;
-    overflow: hidden;
+    overflow: auto;
     white-space: pre-wrap;
     margin-top: 10px;
     display: flex;
@@ -256,7 +262,11 @@ input[type="text"]{
 }
 
 /* responsive */
-@media screen and (max-width: 692px) {
+@media screen and (max-width: 692px){ 
+body{
+    overflow-x: hidden;
+}
+
     .taskList,
     .addItemsContainer,
     #addItemsContainer,
